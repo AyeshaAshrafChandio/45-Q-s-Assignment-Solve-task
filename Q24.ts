@@ -1,17 +1,53 @@
-//Alien Colors #1: Imagine an alien was just shot down in a game. Create a variable called alien_color and assign it a value of 'green', 'yellow', or 'red'.
-//• Write an if statement to test whether the alien’s color is green. If it is, print a message that the player just earned 5 points.
+//More Conditional Tests: You don’t have to limit the number of tests you create to 10. If you want to try more comparisons, write more tests. Have at least one True and one False result for each of the following:
+//• Tests for equality and inequality with strings
 
-//• Write one version of this program that passes the if test and another that fails. (The version that fails will have no output.)
+//• Tests using the lower case function
 
-// Create a variable called alien_color
-const alien_color: string = 'green'; // Assign it a value of 'green', 'yellow', or 'red'.
+//• Numerical tests involving equality and inequality, greater than and less than, greater than or equal to, and less than or equal to
 
-//• Write an if statement to test whether the alien’s color is green. If it is, print a message that the player just earned 5 points.
-if (alien_color === 'green') {
-    console.log("Congratulations! You just earned 5 points.");
-}
+//• Tests using "and" and "or" operators
 
-// Version that fails the if test (no output)
-if (alien_color === 'blue') {
-    console.log("Congratulations! You just earned 5 points.");
-}
+//• Test whether an item is in a array
+ 
+//• Test whether an item is not in a array
+
+const string1: string ='Banana';
+const string2: string ='Grapes';
+console.log( string1 === string2 );
+console.log(string1 !== string2);
+
+
+//• Tests using the lower case function
+const mixCaseString:string='Hello World'
+console.log (mixCaseString.toLowerCase()=='Hello World')
+
+//Numerical tests involving equality and inequality, greater than and less than, greater than or equal to, and less than or equal to
+
+const num1:number=10;
+const num2:number=5;
+console.log(num1 === num2);
+console.log(num1 !== num2);
+console.log(num1 > num2);
+console.log(num1 < num2);
+console.log(num1 >= num2);
+console.log(num1 <= num2);
+
+
+//• Tests using "and" and "or" operators
+
+const condition1 : boolean=true;
+const condition2 : boolean=false;
+console.log (condition1 && condition2);
+console.log (condition1 &&  condition2);
+
+//• Test whether an item is in a array
+ 
+//• Test whether an item is not in a array
+
+// Function to test whether an item is in an array
+const myArray: string[] = ["apple", "banana", "orange"];
+console.log("Array includes test:", myArray.includes("banana")); // true
+
+// Test whether an item is not in an array
+console.log("Array excludes test:", !myArray.includes("grape")); // true
+
